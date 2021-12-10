@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameLayout"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="0"
+                android:alpha="0.0" />
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="1"
+                android:alpha="0.0" />
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="2"
+                android:alpha="0.0" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="3"
+                android:alpha="0.0" />
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="4"
+                android:alpha="0.0" />
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="5"
+                android:alpha="0.0" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="6"
+                android:alpha="0.0" />
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="7"
+                android:alpha="0.0" />
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:src="@drawable/x"
+                android:onClick="play"
+                android:tag="8"
+                android:alpha="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restartLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMessage"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlayAgain"
+            android:layout_gravity="center_horizontal"
+            android:onClick="playAgain"
+            android:text="Play Again" />
+    </LinearLayout>
+
+</RelativeLayout>
